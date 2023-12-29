@@ -9,57 +9,57 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.blueAccent,//color of scaffold
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 70.0,
+                radius: 70.0,//size of the circle avatar
                 backgroundImage: AssetImage('Images/Me.jpg'),
               ),
               Text(
                 'ebuka chigbata',
                 style: TextStyle(
-                    letterSpacing: 2.5,
-                    fontSize: 20.0,
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.5,//spaces between letter of the text
+                    fontSize: 20.0,//size of the text
+                    color: Colors.white,//color of the text
+                    fontWeight: FontWeight.bold,//thickness of the text
                     fontFamily: 'PermanentMarker'),
               ),
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
-                    letterSpacing: 2.5,
-                    fontSize: 20.0,
-                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.5,//spaces between letter of the text
+                    fontSize: 20.0,//size of the text
+                    fontWeight: FontWeight.bold,//thickness of the text
                     fontFamily: 'SourceSans3'),
               ),
-              SizedBox(
+              SizedBox(  //space between texts
                 height: 20.0,
                 width: 150.0,
                 child: Divider(
-                  color: Colors.blueGrey,
+                  color: Colors.blueGrey,//color of the divider
                 ),
               ),
               Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,//color of the card
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),//space between the card and edges of the device
                 child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
+                  padding: const EdgeInsets.all(10.0),//space between the card and the child
+                  child: Row(  //use row for horizontal arrangement
                     children: [
-                      Icon(Icons.phone, color: Colors.blueGrey),
+                      Icon(Icons.phone, color: Colors.blueGrey),//type and color of icon
                       SizedBox(
                         width: 10.0,
                       ),
                       Text(
                         '+234 9129043111',
                         style: TextStyle(
-                          color: Colors.black,
-                          fontFamily: 'SourceSans3',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20.0,
+                          color: Colors.black,//color of text
+                          fontFamily: 'SourceSans3',//font style of the text
+                          fontWeight: FontWeight.bold,//thickness of the text
+                          fontSize: 20.0,//size of the text
                         ),
                       ),
                     ],
@@ -67,17 +67,18 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,//color of the card
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),//space between the card and edges of the device
                 child: ListTile(
-                  leading: Icon(Icons.email, color: Colors.blueGrey),
+                  leading: Icon(Icons.email, color: Colors.blueGrey),//type and color of icon
                   title: Text(
                     'chiderachigbata84@gmail.com',
                     style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'SourceSans3',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20.0),
+                        color: Colors.black,//color of the text
+                        fontFamily: 'SourceSans3',//font style of the text
+                        fontWeight: FontWeight.bold,//thickness of the text
+                        fontSize: 20.0,//size of the text
+                    ),
                   ),
                 ),
               ),
